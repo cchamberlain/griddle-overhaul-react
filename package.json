@@ -15,8 +15,6 @@
     "prerelease-doc": "npm run doc",
     "release-doc": "git subtree push --prefix doc origin gh-pages",
     "postrelease-doc": "git commit -am \"doc-release\" && git push --follow-tags",
-
-
     "test": "karma start --browsers PhantomJS",
     "start": "./node_modules/.bin/webpack --config webpack.config.js --watch",
     "test-debug": "karma start --browsers Chrome",
@@ -53,6 +51,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.3",
+    "esdoc-es7-plugin": "0.0.3",
     "object-assign": "*"
   },
   "peerDependencies": {
