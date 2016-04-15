@@ -1,6 +1,6 @@
 {
   "name": "griddle-overhaul-react",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "The react rendered component code used in the griddle-react grid. ",
   "main": "lib/index.js",
   "scripts": {
