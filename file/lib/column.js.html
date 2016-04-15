@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">lib/column.js | griddle-overhaul-react API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <a data-ice="repoURL" href="https://github.com/cchamberlain/griddle-overhaul-react" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/column-definition.js~ColumnDefinition.html">ColumnDefinition</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/column.js~Column.html">Column</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/filter.js~Filter.html">Filter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/loading.js~Loading.html">Loading</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/no-results.js~NoResults.html">NoResults</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/pagination.js~Pagination.html">Pagination</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/row-definition.js~RowDefinition.html">RowDefinition</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/row.js~Row.html">Row</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/settings-toggle.js~SettingsToggle.html">SettingsToggle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/settings.js~Settings.html">Settings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/table-body.js~TableBody.html">TableBody</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/table-heading-cell.js~TableHeadingCell.html">TableHeadingCell</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/table-heading.js~TableHeading.html">TableHeading</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getAssignedStyles">getAssignedStyles</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getClassName">getClassName</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getStyle">getStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-classNames">classNames</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-griddleClassNames">griddleClassNames</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-griddleStyles">griddleStyles</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-icons">icons</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-inlineStyles">inlineStyles</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">utils</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-arraysEqual">arraysEqual</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getStyleProperties">getStyleProperties</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ColumnHelper">ColumnHelper</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/column.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React from &apos;react&apos;;
+import classnames from &apos;classnames&apos;;
+
+import { getStyleProperties } from &apos;./utils/styleHelper&apos;;
+
+class Column extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+  }
+
+  shouldComponentUpdate(nextProps) {
+    if(this.props.forceUpdate) { return true; }
+    if(this.props.value === nextProps.value) {
+      return false;
+    }
+
+    return true;
+  }
+
+  render() {
+    //TODO: this is temporary -- we&apos;ll need to merge styles or something
+    //  why not use the getStyle from defaultStyles?
+    const styles = this._getStyles();
+
+    const { className } = getStyleProperties(this.props, &apos;column&apos;);
+    const classNames = classnames(className, this.props.cssClassName);
+
+    return (
+      &lt;td
+        style={styles}
+        key={this.props.dataKey}
+        rowIndex={this.props.rowIndex}
+        onClick={this._handleClick}
+        onMouseOver={this._handleHover}
+        className={classNames}&gt;
+          {this.props.hasOwnProperty(&apos;customComponent&apos;) ?
+            &lt;this.props.customComponent
+              data={this.props.value}
+              rowData={this.props.rowData}
+              originalData={this.props.originalRowData}
+              rowIndex={this.props.rowIndex}
+              absoluteRowIndex={this.props.absoluteRowIndex}
+              extraData={this.props.extraData} /&gt; :
+            this.props.value}
+      &lt;/td&gt;
+    );
+  }
+
+  //TODO: Figure out a way to get this hooked up with the normal styles methods
+  //maybe a merge styles property or something along those lines
+  _getStyles = () =&gt; {
+    const style = this.props.styles.getStyle({
+      styles: this.props.styles.inlineStyles,
+      styleName: &apos;column&apos;,
+      //todo: make this nicer
+      mergeStyles: {
+          ...((this.props.width || this.props.alignment || this.props.styles) ?
+            Object.assign({ width: this.props.width || null, textAlign: this.props.alignment }) : {}),
+          ...this.props.style
+      }
+    });
+
+    return style;
+  }
+
+  _handleClick = (e) =&gt; {
+    if (this.props.onClick) this.props.onClick(e);
+
+    this.props.events.columnClick(this.props.dataKey, this.props.value, this.props.rowIndex, this.props.rowData);
+  }
+
+  _handleHover = (e) =&gt; {
+    this.props.events.columnHover(this.props.dataKey, this.props.value, this.props.rowIndex, this.props.rowData);
+  }
+}
+
+Column.defaultProps = {
+  columnProperties: {
+    cssClassName: &apos;&apos;
+  }
+};
+
+Column.propTypes = {
+  alignment: React.PropTypes.oneOf([&apos;left&apos;, &apos;right&apos;, &apos;center&apos;]),
+  columnHover: React.PropTypes.func,
+  columnClick: React.PropTypes.func
+};
+
+export default Column;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.6)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
