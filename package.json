@@ -1,7 +1,7 @@
 {
-  "name": "griddle-overhaul-render",
+  "name": "griddle-overhaul-react",
   "version": "0.0.31",
-  "description": "The rendered component code used in the griddle-react grid. ",
+  "description": "The react rendered component code used in the griddle-react grid. ",
   "main": "lib/index.js",
   "scripts": {
     "prebuild": "rimraf build",
@@ -58,5 +58,8 @@
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0"
   },
-  "repository": "https://github.com/cchamberlain/griddle-overhaul-render"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchamberlain/griddle-overhaul-react.git"
+  }
 }

@@ -1,9 +1,9 @@
-import React from 'react';
-import {getStyleProperties}  from './utils/styleHelper';
+import React, { Component, PropTypes } from 'react'
+import { getStyleProperties }  from './utils/styleHelper'
 
-class Loading extends React.Component {
+export default class Loading extends Component {
   render() {
-    const { style, className } = getStyleProperties(this.props, 'loading');
+    const { style, className } = getStyleProperties(this.props, 'loading')
 
     return (
       <tr>
@@ -13,8 +13,6 @@ class Loading extends React.Component {
           </div>
         </td>
       </tr>
-    );
+    )
   }
 }
-
-export default Loading;
