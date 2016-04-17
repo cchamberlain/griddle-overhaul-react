@@ -1,93 +1,9 @@
 window.esdocSearchIndex = [
   [
-    "griddle-overhaul-react/lib/column.js~column",
-    "class/lib/column.js~Column.html",
-    "<span>Column</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/column.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/column-definition.js~columndefinition",
-    "class/lib/column-definition.js~ColumnDefinition.html",
-    "<span>ColumnDefinition</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/column-definition.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/utils/column-helper.js~columnhelper",
+    "griddle-overhaul-react/lib/utils/columnhelper.js~columnhelper",
     "variable/index.html#static-variable-ColumnHelper",
-    "<span>ColumnHelper</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/utils/column-helper.js</span>",
+    "<span>ColumnHelper</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/utils/ColumnHelper.js</span>",
     "variable"
-  ],
-  [
-    "griddle-overhaul-react/lib/filter.js~filter",
-    "class/lib/filter.js~Filter.html",
-    "<span>Filter</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/filter.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/loading.js~loading",
-    "class/lib/loading.js~Loading.html",
-    "<span>Loading</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/loading.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/no-results.js~noresults",
-    "class/lib/no-results.js~NoResults.html",
-    "<span>NoResults</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/no-results.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/pagination.js~pagination",
-    "class/lib/pagination.js~Pagination.html",
-    "<span>Pagination</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/pagination.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/row.js~row",
-    "class/lib/row.js~Row.html",
-    "<span>Row</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/row.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/row-definition.js~rowdefinition",
-    "class/lib/row-definition.js~RowDefinition.html",
-    "<span>RowDefinition</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/row-definition.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/settings.js~settings",
-    "class/lib/settings.js~Settings.html",
-    "<span>Settings</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/settings.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/settings-toggle.js~settingstoggle",
-    "class/lib/settings-toggle.js~SettingsToggle.html",
-    "<span>SettingsToggle</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/settings-toggle.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/table.js~table",
-    "class/lib/table.js~Table.html",
-    "<span>Table</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/table.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/table-body.js~tablebody",
-    "class/lib/table-body.js~TableBody.html",
-    "<span>TableBody</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/table-body.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/table-heading.js~tableheading",
-    "class/lib/table-heading.js~TableHeading.html",
-    "<span>TableHeading</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/table-heading.js</span>",
-    "class"
-  ],
-  [
-    "griddle-overhaul-react/lib/table-heading-cell.js~tableheadingcell",
-    "class/lib/table-heading-cell.js~TableHeadingCell.html",
-    "<span>TableHeadingCell</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/table-heading-cell.js</span>",
-    "class"
   ],
   [
     "griddle-overhaul-react/lib/utils/arrayhelper.js~arraysequal",
@@ -122,7 +38,7 @@ window.esdocSearchIndex = [
   [
     "griddle-overhaul-react/lib/utils/stylehelper.js~getstyleproperties",
     "function/index.html#static-function-getStyleProperties",
-    "<span>getStyleProperties</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/utils/styleHelper.js</span>",
+    "<span>getStyleProperties</span> <span class=\"search-result-import-path\">griddle-overhaul-react/lib/utils/StyleHelper.js</span>",
     "function"
   ],
   [
@@ -480,45 +396,9 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "lib/column-definition.js",
-    "file/lib/column-definition.js.html",
-    "lib/column-definition.js",
-    "file"
-  ],
-  [
-    "lib/column-definition.js~columndefinition#render",
-    "class/lib/column-definition.js~ColumnDefinition.html#instance-method-render",
-    "lib/column-definition.js~ColumnDefinition#render",
-    "method"
-  ],
-  [
-    "lib/column.js",
-    "file/lib/column.js.html",
-    "lib/column.js",
-    "file"
-  ],
-  [
-    "lib/column.js~column#constructor",
-    "class/lib/column.js~Column.html#instance-constructor-constructor",
-    "lib/column.js~Column#constructor",
-    "method"
-  ],
-  [
-    "lib/column.js~column#render",
-    "class/lib/column.js~Column.html#instance-method-render",
-    "lib/column.js~Column#render",
-    "method"
-  ],
-  [
-    "lib/column.js~column#shouldcomponentupdate",
-    "class/lib/column.js~Column.html#instance-method-shouldComponentUpdate",
-    "lib/column.js~Column#shouldComponentUpdate",
-    "method"
-  ],
-  [
     "lib/defaultmodules.js",
-    "file/lib/defaultModules.js.html",
-    "lib/defaultModules.js",
+    "file/lib/DefaultModules.js.html",
+    "lib/DefaultModules.js",
     "file"
   ],
   [
@@ -534,297 +414,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "lib/filter.js",
-    "file/lib/filter.js.html",
-    "lib/filter.js",
-    "file"
-  ],
-  [
-    "lib/filter.js~filter#constructor",
-    "class/lib/filter.js~Filter.html#instance-constructor-constructor",
-    "lib/filter.js~Filter#constructor",
-    "method"
-  ],
-  [
-    "lib/filter.js~filter#render",
-    "class/lib/filter.js~Filter.html#instance-method-render",
-    "lib/filter.js~Filter#render",
-    "method"
-  ],
-  [
-    "lib/filter.js~filter#shouldcomponentupdate",
-    "class/lib/filter.js~Filter.html#instance-method-shouldComponentUpdate",
-    "lib/filter.js~Filter#shouldComponentUpdate",
-    "method"
-  ],
-  [
     "lib/index.js",
     "file/lib/index.js.html",
     "lib/index.js",
     "file"
   ],
   [
-    "lib/loading.js",
-    "file/lib/loading.js.html",
-    "lib/loading.js",
+    "lib/utils/columnhelper.js",
+    "file/lib/utils/ColumnHelper.js.html",
+    "lib/utils/ColumnHelper.js",
     "file"
   ],
   [
-    "lib/loading.js~loading#render",
-    "class/lib/loading.js~Loading.html#instance-method-render",
-    "lib/loading.js~Loading#render",
-    "method"
-  ],
-  [
-    "lib/no-results.js",
-    "file/lib/no-results.js.html",
-    "lib/no-results.js",
+    "lib/utils/stylehelper.js",
+    "file/lib/utils/StyleHelper.js.html",
+    "lib/utils/StyleHelper.js",
     "file"
-  ],
-  [
-    "lib/no-results.js~noresults#render",
-    "class/lib/no-results.js~NoResults.html#instance-method-render",
-    "lib/no-results.js~NoResults#render",
-    "method"
-  ],
-  [
-    "lib/pagination.js",
-    "file/lib/pagination.js.html",
-    "lib/pagination.js",
-    "file"
-  ],
-  [
-    "lib/pagination.js~pagination#constructor",
-    "class/lib/pagination.js~Pagination.html#instance-constructor-constructor",
-    "lib/pagination.js~Pagination#constructor",
-    "method"
-  ],
-  [
-    "lib/pagination.js~pagination#render",
-    "class/lib/pagination.js~Pagination.html#instance-method-render",
-    "lib/pagination.js~Pagination#render",
-    "method"
-  ],
-  [
-    "lib/row-definition.js",
-    "file/lib/row-definition.js.html",
-    "lib/row-definition.js",
-    "file"
-  ],
-  [
-    "lib/row-definition.js~rowdefinition#render",
-    "class/lib/row-definition.js~RowDefinition.html#instance-method-render",
-    "lib/row-definition.js~RowDefinition#render",
-    "method"
-  ],
-  [
-    "lib/row.js",
-    "file/lib/row.js.html",
-    "lib/row.js",
-    "file"
-  ],
-  [
-    "lib/row.js~row#constructor",
-    "class/lib/row.js~Row.html#instance-constructor-constructor",
-    "lib/row.js~Row#constructor",
-    "method"
-  ],
-  [
-    "lib/row.js~row#render",
-    "class/lib/row.js~Row.html#instance-method-render",
-    "lib/row.js~Row#render",
-    "method"
-  ],
-  [
-    "lib/settings-toggle.js",
-    "file/lib/settings-toggle.js.html",
-    "lib/settings-toggle.js",
-    "file"
-  ],
-  [
-    "lib/settings-toggle.js~settingstoggle#constructor",
-    "class/lib/settings-toggle.js~SettingsToggle.html#instance-constructor-constructor",
-    "lib/settings-toggle.js~SettingsToggle#constructor",
-    "method"
-  ],
-  [
-    "lib/settings-toggle.js~settingstoggle#render",
-    "class/lib/settings-toggle.js~SettingsToggle.html#instance-method-render",
-    "lib/settings-toggle.js~SettingsToggle#render",
-    "method"
-  ],
-  [
-    "lib/settings-toggle.js~settingstoggle#shouldcomponentupdate",
-    "class/lib/settings-toggle.js~SettingsToggle.html#instance-method-shouldComponentUpdate",
-    "lib/settings-toggle.js~SettingsToggle#shouldComponentUpdate",
-    "method"
-  ],
-  [
-    "lib/settings-toggle.js~settingstoggle#state",
-    "class/lib/settings-toggle.js~SettingsToggle.html#instance-member-state",
-    "lib/settings-toggle.js~SettingsToggle#state",
-    "member"
-  ],
-  [
-    "lib/settings.js",
-    "file/lib/settings.js.html",
-    "lib/settings.js",
-    "file"
-  ],
-  [
-    "lib/settings.js~settings#render",
-    "class/lib/settings.js~Settings.html#instance-method-render",
-    "lib/settings.js~Settings#render",
-    "method"
-  ],
-  [
-    "lib/table-body.js",
-    "file/lib/table-body.js.html",
-    "lib/table-body.js",
-    "file"
-  ],
-  [
-    "lib/table-body.js~tablebody#constructor",
-    "class/lib/table-body.js~TableBody.html#instance-constructor-constructor",
-    "lib/table-body.js~TableBody#constructor",
-    "method"
-  ],
-  [
-    "lib/table-body.js~tablebody#render",
-    "class/lib/table-body.js~TableBody.html#instance-method-render",
-    "lib/table-body.js~TableBody#render",
-    "method"
-  ],
-  [
-    "lib/table-body.js~tablebody#shouldcomponentupdate",
-    "class/lib/table-body.js~TableBody.html#instance-method-shouldComponentUpdate",
-    "lib/table-body.js~TableBody#shouldComponentUpdate",
-    "method"
-  ],
-  [
-    "lib/table-heading-cell.js",
-    "file/lib/table-heading-cell.js.html",
-    "lib/table-heading-cell.js",
-    "file"
-  ],
-  [
-    "lib/table-heading-cell.js~tableheadingcell#constructor",
-    "class/lib/table-heading-cell.js~TableHeadingCell.html#instance-constructor-constructor",
-    "lib/table-heading-cell.js~TableHeadingCell#constructor",
-    "method"
-  ],
-  [
-    "lib/table-heading-cell.js~tableheadingcell#getsorticon",
-    "class/lib/table-heading-cell.js~TableHeadingCell.html#instance-method-getSortIcon",
-    "lib/table-heading-cell.js~TableHeadingCell#getSortIcon",
-    "method"
-  ],
-  [
-    "lib/table-heading-cell.js~tableheadingcell#issortable",
-    "class/lib/table-heading-cell.js~TableHeadingCell.html#instance-method-isSortable",
-    "lib/table-heading-cell.js~TableHeadingCell#isSortable",
-    "method"
-  ],
-  [
-    "lib/table-heading-cell.js~tableheadingcell#render",
-    "class/lib/table-heading-cell.js~TableHeadingCell.html#instance-method-render",
-    "lib/table-heading-cell.js~TableHeadingCell#render",
-    "method"
-  ],
-  [
-    "lib/table-heading.js",
-    "file/lib/table-heading.js.html",
-    "lib/table-heading.js",
-    "file"
-  ],
-  [
-    "lib/table-heading.js~tableheading#constructor",
-    "class/lib/table-heading.js~TableHeading.html#instance-constructor-constructor",
-    "lib/table-heading.js~TableHeading#constructor",
-    "method"
-  ],
-  [
-    "lib/table-heading.js~tableheading#getcolumntitle",
-    "class/lib/table-heading.js~TableHeading.html#instance-method-getColumnTitle",
-    "lib/table-heading.js~TableHeading#getColumnTitle",
-    "method"
-  ],
-  [
-    "lib/table-heading.js~tableheading#render",
-    "class/lib/table-heading.js~TableHeading.html#instance-method-render",
-    "lib/table-heading.js~TableHeading#render",
-    "method"
-  ],
-  [
-    "lib/table-heading.js~tableheading#shouldcomponentupdate",
-    "class/lib/table-heading.js~TableHeading.html#instance-method-shouldComponentUpdate",
-    "lib/table-heading.js~TableHeading#shouldComponentUpdate",
-    "method"
-  ],
-  [
-    "lib/table-heading.js~tableheading#state",
-    "class/lib/table-heading.js~TableHeading.html#instance-member-state",
-    "lib/table-heading.js~TableHeading#state",
-    "member"
-  ],
-  [
-    "lib/table.js",
-    "file/lib/table.js.html",
-    "lib/table.js",
-    "file"
-  ],
-  [
-    "lib/table.js~table#constructor",
-    "class/lib/table.js~Table.html#instance-constructor-constructor",
-    "lib/table.js~Table#constructor",
-    "method"
-  ],
-  [
-    "lib/table.js~table#getcolumns",
-    "class/lib/table.js~Table.html#instance-method-getColumns",
-    "lib/table.js~Table#getColumns",
-    "method"
-  ],
-  [
-    "lib/table.js~table#gettablebodysection",
-    "class/lib/table.js~Table.html#instance-method-getTableBodySection",
-    "lib/table.js~Table#getTableBodySection",
-    "method"
-  ],
-  [
-    "lib/table.js~table#gettableheadersection",
-    "class/lib/table.js~Table.html#instance-method-getTableHeaderSection",
-    "lib/table.js~Table#getTableHeaderSection",
-    "method"
-  ],
-  [
-    "lib/table.js~table#render",
-    "class/lib/table.js~Table.html#instance-method-render",
-    "lib/table.js~Table#render",
-    "method"
-  ],
-  [
-    "lib/table.js~table#state",
-    "class/lib/table.js~Table.html#instance-member-state",
-    "lib/table.js~Table#state",
-    "member"
   ],
   [
     "lib/utils/arrayhelper.js",
     "file/lib/utils/arrayHelper.js.html",
     "lib/utils/arrayHelper.js",
-    "file"
-  ],
-  [
-    "lib/utils/column-helper.js",
-    "file/lib/utils/column-helper.js.html",
-    "lib/utils/column-helper.js",
-    "file"
-  ],
-  [
-    "lib/utils/stylehelper.js",
-    "file/lib/utils/styleHelper.js.html",
-    "lib/utils/styleHelper.js",
     "file"
   ]
 ]

@@ -1,148 +1,13 @@
 {
   "coverage": "0%",
-  "expectCount": 62,
+  "expectCount": 11,
   "actualCount": 0,
   "files": {
-    "lib/column.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        7,
-        20,
-        11
-      ]
-    },
-    "lib/column-definition.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        5,
-        6
-      ]
-    },
-    "lib/utils/column-helper.js": {
+    "lib/utils/ColumnHelper.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        6
-      ]
-    },
-    "lib/filter.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5,
-        15,
-        11
-      ]
-    },
-    "lib/loading.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5
-      ]
-    },
-    "lib/no-results.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5
-      ]
-    },
-    "lib/pagination.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5,
-        11
-      ]
-    },
-    "lib/row.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        5,
-        6,
-        10
-      ]
-    },
-    "lib/row-definition.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        7
-      ]
-    },
-    "lib/settings.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        46,
-        47
-      ]
-    },
-    "lib/settings-toggle.js": {
-      "expectCount": 5,
-      "actualCount": 0,
-      "undocumentLines": [
-        5,
-        6,
-        18,
-        14,
-        8
-      ]
-    },
-    "lib/table.js": {
-      "expectCount": 7,
-      "actualCount": 0,
-      "undocumentLines": [
-        5,
-        6,
-        32,
-        12,
-        57,
-        67,
-        9
-      ]
-    },
-    "lib/table-body.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5,
-        13,
-        9
-      ]
-    },
-    "lib/table-heading.js": {
-      "expectCount": 6,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        7,
-        23,
-        33,
-        13,
-        10
-      ]
-    },
-    "lib/table-heading-cell.js": {
-      "expectCount": 5,
-      "actualCount": 0,
-      "undocumentLines": [
-        5,
-        6,
-        13,
-        21,
-        33
+        4
       ]
     },
     "lib/utils/arrayHelper.js": {
@@ -166,7 +31,7 @@
         23
       ]
     },
-    "lib/utils/styleHelper.js": {
+    "lib/utils/StyleHelper.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
