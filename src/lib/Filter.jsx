@@ -1,19 +1,18 @@
-import React from 'react';
-import { getStyleProperties }  from './utils/styleHelper';
+import React, { Component, PropTypes } from 'react'
+import { getStyleProperties }  from './utils/StyleHelper'
 
-class Filter extends React.Component {
+class Filter extends Component {
   constructor(props, context) {
-    super(props, context);
-
-    this._handleChange = this._handleChange.bind(this);
+    super(props, context)
+    this._handleChange = this._handleChange.bind(this)
   }
 
   shouldComponentUpdate(props) {
-    return false;
+    return false
   }
 
   render() {
-    const {style, className } = getStyleProperties(this.props, 'filter');
+    const {style, className } = getStyleProperties(this.props, 'filter')
 
     return (
       <input
@@ -23,12 +22,12 @@ class Filter extends React.Component {
         style={style}
         placeholder="filter"
         onChange={this._handleChange} />
-    );
+    )
   }
 
   _handleChange = (e) => {
     //TODO: debounce this
-    this.props.events.setFilter(e.target.value);
+    this.props.events.setFilter(e.target.value)
   }
 }
 
@@ -36,4 +35,4 @@ Filter.propTypes = {
   setFilter: React.PropTypes.func
 }
 
-export default Filter;
+export default Filter

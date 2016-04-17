@@ -6,18 +6,18 @@
 // mergeStyles: styles to apply in addition to the inline styling. This is usually applied with some logic in the front-end
 export function getStyle({styleName, styles, mergeStyles = null}) {
   if (styles.hasOwnProperty(styleName)) {
-    return Object.assign({}, styles[styleName], mergeStyles);
+    return Object.assign({}, styles[styleName], mergeStyles)
   }
 
-  return mergeStyles || null;
+  return mergeStyles || null
 }
 
 export function getClassName({section, classNames}) {
   if(classNames.hasOwnProperty(section)) {
-    return classNames[section];
+    return classNames[section]
   }
 
-  return null;
+  return null
 }
 
 export const inlineStyles = {
@@ -28,7 +28,7 @@ export const inlineStyles = {
   pagination: {},
   table: {},
   fixedTable: {
-    tableLayout: 'fixed',
+    tableLayout: 'fixed'
   }
 }
 
@@ -81,7 +81,7 @@ export const griddleStyles = {
   },
 
   fixedTable: {
-    tableLayout: 'fixed',
+    tableLayout: 'fixed'
   }
 }
 
@@ -123,7 +123,7 @@ export const icons = {
   parentRowExpanded: '▼',
   sortDescending: '▼',
   sortAscending: '▲'
-};
+}
 
 export function getAssignedStyles(extension, useGriddleStyles) {
   let styles = {
@@ -132,22 +132,17 @@ export function getAssignedStyles(extension, useGriddleStyles) {
     icons,
     getStyle,
     getClassName
-  };
-
-  if (extension) {
-    if (extension.hasOwnProperty('inlineStyles')) {
-      styles.inlineStyles = Object.assign({}, styles.inlineStyles, extension.inlineStyles);
-    }
-
-    if (extension.hasOwnProperty('classNames')) {
-      styles.classNames = Object.assign({}, styles.classNames, extension.classNames);
-    }
-
-    if (extension.hasOwnProperty('icons')) {
-      styles.icons = Object.assign({}, icons, extension.icons);
-    }
   }
 
-  return styles;
+  if (extension) {
+    if (extension.hasOwnProperty('inlineStyles'))
+      styles.inlineStyles = Object.assign({}, styles.inlineStyles, extension.inlineStyles)
+    if (extension.hasOwnProperty('classNames'))
+      styles.classNames = Object.assign({}, styles.classNames, extension.classNames)
+    if (extension.hasOwnProperty('icons'))
+      styles.icons = Object.assign({}, icons, extension.icons)
+  }
+
+  return styles
 }
 

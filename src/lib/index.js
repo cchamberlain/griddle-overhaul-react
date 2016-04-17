@@ -1,5 +1,5 @@
-import Griddle from './griddle.jsx'
-import * as DefaultModules from './defaultModules'
-import * as StyleHelpers from './utils/styleHelper'
+import Griddle from './Griddle'
+import * as DefaultModules from './DefaultModules'
+import * as StyleHelpers from './utils/StyleHelper'
 
 export { Griddle, DefaultModules, StyleHelpers }

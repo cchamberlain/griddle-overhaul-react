@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import * as defaultModules from './defaultModules'
+import * as DefaultModules from './DefaultModules'
 import { getAssignedStyles } from './defaultStyles'
 import * as defaultSettings from './defaultSettings'
 import { arraysEqual } from './utils/arrayHelper'

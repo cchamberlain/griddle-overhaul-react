@@ -1,12 +1,11 @@
-import React from 'react';
-import RowDefinition from './row-definition';
-import { getStyleProperties } from './utils/styleHelper';
+import React, { Component, PropTypes } from 'react'
+import RowDefinition from './RowDefinition'
+import { getStyleProperties } from './utils/StyleHelper'
 
-class Table extends React.Component {
+export default class Table extends Component {
   constructor(props, context) {
-    super(props, context);
-
-    this.state = {};
+    super(props, context)
+    this.state = {}
   }
 
   getTableBodySection() {
@@ -23,59 +22,54 @@ class Table extends React.Component {
             </td>
           </tr>
         </tbody>
-      );
+      )
     }
 
-    return <this.props.components.TableBody {...this.props} />;
+    return <this.props.components.TableBody {...this.props} />
   }
 
   getColumns() {
-    const columnProperties = this.props.renderProperties.columnProperties;
+    const columnProperties = this.props.renderProperties.columnProperties
 
-    if(this.props.data.length > 0) {
-      return Object.keys(this.props.data[0]);
-    }
+    if(this.props.data.length > 0)
+      return Object.keys(this.props.data[0])
 
     if(columnProperties) {
       return Object.keys(this.props.renderProperties.columnProperties).sort((first, second) => {
-        const firstColumn = columnProperties[first];
-        const secondColumn = columnProperties[second];
+        const firstColumn = columnProperties[first]
+        const secondColumn = columnProperties[second]
 
         //deal with columns without order properties
-        if(!firstColumn['order'] && !secondColumn['order']) { return 0; }
+        if(!firstColumn['order'] && !secondColumn['order']) { return 0 }
         if(firstColumn['order'] && !secondColumn['order']) { return -1 }
         if(!firstColumn['order'] && secondColumn['order']) { return 1 }
 
         //order the columns if they both have an order property
-        return (firstColumn["order"]) - (secondColumn["order"]);
-      });
+        return (firstColumn['order']) - (secondColumn['order'])
+      })
     }
-
-    return [];
+    return []
   }
 
   getTableHeaderSection() {
-    const columns = this.getColumns();
-
-    if(columns.length > 0) {
+    const columns = this.getColumns()
+    if(columns.length > 0)
       return <this.props.components.TableHeading columns={columns} {...this.props} />
-    }
-
-    return null;
+    return null
   }
 
   render() {
-    const { settings, styles } = this.props;
+    const { settings, styles } = this.props
     const style = styles.getStyle({
       styles: styles.inlineStyles,
       styleName: 'table',
       mergeStyles: settings.useFixedTable && styles.getStyle({
         styles: styles.inlineStyles,
-        styleName: 'fixedTable',
+        styleName: 'fixedTable'
       })
-    });
+    })
 
-    const { className } = getStyleProperties(this.props, 'table');
+    const { className } = getStyleProperties(this.props, 'table')
     //translate the definition object to props for Heading / Body
     return (
       <table
@@ -85,7 +79,7 @@ class Table extends React.Component {
         { this.getTableHeaderSection() }
         { this.getTableBodySection() }
       </table>
-    );
+    )
   }
 }
 
@@ -97,5 +91,3 @@ Table.propTypes = {
     // React.PropTypes.arrayOf(React.PropTypes.instanceOf(ColumnDefinition))
   ])
 }; */
-
-export default Table;

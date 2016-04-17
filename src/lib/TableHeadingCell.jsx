@@ -1,32 +1,27 @@
-import React from 'react';
-import classnames from 'classnames';
+import React, { Component, PropTypes } from 'react'
+import classnames from 'classnames'
 
-import { getStyleProperties } from './utils/styleHelper';
-class TableHeadingCell extends React.Component {
+import { getStyleProperties } from './utils/StyleHelper'
+export default class TableHeadingCell extends Component {
   constructor(props, context) {
-    super(props, context);
-
-    this._handleClick = this._handleClick.bind(this);
-    this._handleHover = this._handleHover.bind(this);
+    super(props, context)
+    this._handleClick = this._handleClick.bind(this)
+    this._handleHover = this._handleHover.bind(this)
   }
 
   getSortIcon() {
-    const { sorted, sortAscending, icons } = this.props;
-
-    if (sorted) {
-      return sortAscending ? icons.sortAscending : icons.sortDescending;
-    }
+    const { sorted, sortAscending, icons } = this.props
+    if (sorted)
+      return sortAscending ? icons.sortAscending : icons.sortDescending
   }
 
   isSortable() {
-    const { column, renderProperties } = this.props;
-    const columnProperties = renderProperties.columnProperties[column];
+    const { column, renderProperties } = this.props
+    const columnProperties = renderProperties.columnProperties[column]
 
-    if(columnProperties && columnProperties.hasOwnProperty('sortable') && columnProperties.sortable === false) {
-      return false;
-    }
-
-    return true;
+    if(columnProperties && columnProperties.hasOwnProperty('sortable') && columnProperties.sortable === false)
+      return false
+    return true
   }
 
 
@@ -39,12 +34,12 @@ class TableHeadingCell extends React.Component {
           ...(this.props.alignment || this.props.headerAlignment ? {textAlign: this.props.headerAlignment || this.props.alignment} : {}),
           ...this.props.style
         }
-      });
+      })
 
-    const { className } = getStyleProperties(this.props, 'tableHeadingCell');
+    const { className } = getStyleProperties(this.props, 'tableHeadingCell')
     const classNames = classnames(className, this.props.columnProperty ? this.props.columnProperty.headerCssClassName : null)
-    const { sorted } = this.props;
-    const clickEvent = this.isSortable() ? this._handleClick : null;
+    const { sorted } = this.props
+    const clickEvent = this.isSortable() ? this._handleClick : null
 
     return (
       <th
@@ -55,15 +50,15 @@ class TableHeadingCell extends React.Component {
         className={classNames}
       >
         {this.props.customHeaderComponent ? <this.props.customHeaderComponent {...this.props} /> : this.props.title } { this.getSortIcon() }
-      </th>);
+      </th>)
   }
 
   _handleHover() {
-    this.props.headingHover(this.props.column);
+    this.props.headingHover(this.props.column)
   }
 
   _handleClick() {
-    this.props.headingClick(this.props.column);
+    this.props.headingClick(this.props.column)
   }
 }
 
@@ -75,6 +70,4 @@ TableHeadingCell.propTypes = {
   alignment: React.PropTypes.oneOf(['left', 'right', 'center']),
   sortAscending: React.PropTypes.bool,
   sorted: React.PropTypes.bool
-};
-
-export default TableHeadingCell;
+}

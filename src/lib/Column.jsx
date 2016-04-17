@@ -1,29 +1,25 @@
-import React from 'react';
-import classnames from 'classnames';
+import React, { Component, PropTypes } from 'react'
+import classnames from 'classnames'
 
-import { getStyleProperties } from './utils/styleHelper';
+import { getStyleProperties } from './utils/StyleHelper'
 
-class Column extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
+class Column extends Component {
   shouldComponentUpdate(nextProps) {
-    if(this.props.forceUpdate) { return true; }
+    if(this.props.forceUpdate) { return true }
     if(this.props.value === nextProps.value) {
-      return false;
+      return false
     }
 
-    return true;
+    return true
   }
 
   render() {
     //TODO: this is temporary -- we'll need to merge styles or something
     //  why not use the getStyle from defaultStyles?
-    const styles = this._getStyles();
+    const styles = this._getStyles()
 
-    const { className } = getStyleProperties(this.props, 'column');
-    const classNames = classnames(className, this.props.cssClassName);
+    const { className } = getStyleProperties(this.props, 'column')
+    const classNames = classnames(className, this.props.cssClassName)
 
     return (
       <td
@@ -43,7 +39,7 @@ class Column extends React.Component {
               extraData={this.props.extraData} /> :
             this.props.value}
       </td>
-    );
+    )
   }
 
   //TODO: Figure out a way to get this hooked up with the normal styles methods
@@ -58,19 +54,19 @@ class Column extends React.Component {
             Object.assign({ width: this.props.width || null, textAlign: this.props.alignment }) : {}),
           ...this.props.style
       }
-    });
+    })
 
-    return style;
+    return style
   }
 
   _handleClick = (e) => {
-    if (this.props.onClick) this.props.onClick(e);
+    if (this.props.onClick) this.props.onClick(e)
 
-    this.props.events.columnClick(this.props.dataKey, this.props.value, this.props.rowIndex, this.props.rowData);
+    this.props.events.columnClick(this.props.dataKey, this.props.value, this.props.rowIndex, this.props.rowData)
   }
 
   _handleHover = (e) => {
-    this.props.events.columnHover(this.props.dataKey, this.props.value, this.props.rowIndex, this.props.rowData);
+    this.props.events.columnHover(this.props.dataKey, this.props.value, this.props.rowIndex, this.props.rowData)
   }
 }
 
@@ -78,12 +74,12 @@ Column.defaultProps = {
   columnProperties: {
     cssClassName: ''
   }
-};
+}
 
 Column.propTypes = {
   alignment: React.PropTypes.oneOf(['left', 'right', 'center']),
   columnHover: React.PropTypes.func,
   columnClick: React.PropTypes.func
-};
+}
 
-export default Column;
+export default Column

@@ -1,18 +1,12 @@
-import React from 'react';
-import { getStyleProperties } from './utils/styleHelper';
+import React, { Component, PropTypes } from 'react'
+import { getStyleProperties } from './utils/StyleHelper'
 
-class TableBody extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
+export default class TableBody extends Component {
   shouldComponentUpdate(nextProps) {
-    return this.props.data !== nextProps.data;
+    return this.props.data !== nextProps.data
   }
-
   render() {
-    const { data, loading, components, styles, settings, events, renderProperties, tableProperties } = this.props;
-
+    const { data, loading, components, styles, settings, events, renderProperties, tableProperties } = this.props
     const rows = loading ? <components.Loading components={components} styles={styles} settings={settings} events={events} />
         : data
           .filter(data => data.visible === undefined || data.visible === true)
@@ -31,16 +25,12 @@ class TableBody extends React.Component {
               ignoredColumns={renderProperties.ignoredColumns}
               columnProperties={renderProperties.columnProperties}
               />
-          );
-
-    const { style, className } = getStyleProperties(this.props, 'tableBody');
-
+          )
+    const { style, className } = getStyleProperties(this.props, 'tableBody')
     return (
       <tbody style={style} className={className}>
         {rows}
       </tbody>
-    );
+    )
   }
 }
-
-export default TableBody;

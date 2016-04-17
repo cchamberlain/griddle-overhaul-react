@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { getStyleProperties }  from './utils/styleHelper'
+import { getStyleProperties }  from './utils/StyleHelper'
 
 export default class Loading extends Component {
   render() {

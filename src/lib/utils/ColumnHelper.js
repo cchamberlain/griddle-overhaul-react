@@ -1,14 +1,12 @@
-'use strict';
-
 //TODO: Why is this even used?
 //      Could probalby set something up in the reducers to send the visible columns based on the properties.
 //      At the very least, make the signature (column, { columnProperties, ignoredColumns })
 const ColumnHelper = {
   isColumnVisible(column, {columnProperties,ignoredColumns}) {
-    if(column === "__metadata") { return false; }
+    if(column === '__metadata') { return false }
 
-    if(!ignoredColumns) { return true; }
-    return !(ignoredColumns.indexOf(column) >= 0);
+    if(!ignoredColumns) { return true }
+    return !(ignoredColumns.indexOf(column) >= 0)
   },
 
   //TODO: Not sure I like this method
@@ -18,8 +16,8 @@ const ColumnHelper = {
   getColumnPropertyObject(columnProperties, columnName) {
     return columnProperties.hasOwnProperty(columnName) ?
       columnProperties[columnName] :
-      null;
+      null
   }
-};
+}
 
-export default ColumnHelper;
+export default ColumnHelper

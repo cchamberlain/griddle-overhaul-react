@@ -1,13 +1,12 @@
-import React from 'react';
-import ColumnHelper from './utils/column-helper';
-import { getStyleProperties } from './utils/styleHelper';
-import { arraysEqual } from './utils/arrayHelper';;
+import React, { Component, PropTypes } from 'react'
+import ColumnHelper from './utils/ColumnHelper'
+import { getStyleProperties } from './utils/StyleHelper'
+import { arraysEqual } from './utils/arrayHelper'
 
-  class TableHeading extends React.Component {
+export default class TableHeading extends Component {
   constructor(props, context) {
-    super(props, context);
-
-    this.state = {};
+    super(props, context)
+    this.state = {}
   }
 
   shouldComponentUpdate(nextProps) {
@@ -17,13 +16,13 @@ import { arraysEqual } from './utils/arrayHelper';;
         (!arraysEqual(this.props.pageProperties.sortColumns, nextProps.pageProperties.sortColumns) ||
         this.props.pageProperties.sortAscending !== nextProps.pageProperties.sortAscending)
       )
-    );
+    )
   }
 
   getColumnTitle(column) {
     const initial = this.props.columnTitles[column]  ?
               this.props.columnTitles[column] :
-              column;
+              column
 
     return this.props.renderProperties.columnProperties[column] && this.props.renderProperties.columnProperties[column].hasOwnProperty('displayName') ?
         this.props.renderProperties.columnProperties[column].displayName :
@@ -31,18 +30,18 @@ import { arraysEqual } from './utils/arrayHelper';;
   }
 
   render() {
-    let { headingClick, headingHover } = this.props.events;
-    const { renderProperties } = this.props;
-    const { style, className } = getStyleProperties(this.props, 'tableHeading');
+    let { headingClick, headingHover } = this.props.events
+    const { renderProperties } = this.props
+    const { style, className } = getStyleProperties(this.props, 'tableHeading')
 
     const headings = this.props.columns.map(column =>{
-      let columnProperty = ColumnHelper.getColumnPropertyObject(renderProperties.columnProperties, column);
-      const showColumn = ColumnHelper.isColumnVisible(column, { columnProperties: renderProperties.columnProperties, ignoredColumns: renderProperties.ignoredColumns });
-      const sortAscending = this.props.pageProperties && this.props.pageProperties.sortAscending;
+      let columnProperty = ColumnHelper.getColumnPropertyObject(renderProperties.columnProperties, column)
+      const showColumn = ColumnHelper.isColumnVisible(column, { columnProperties: renderProperties.columnProperties, ignoredColumns: renderProperties.ignoredColumns })
+      const sortAscending = this.props.pageProperties && this.props.pageProperties.sortAscending
       const sorted = this.props.pageProperties && this.props.pageProperties.sortColumns.indexOf(column) > -1
 
-      const title = this.getColumnTitle(column);
-      let component = null;
+      const title = this.getColumnTitle(column)
+      let component = null
       if(showColumn) {
         component = (<this.props.components.TableHeadingCell
             key={column}
@@ -57,11 +56,11 @@ import { arraysEqual } from './utils/arrayHelper';;
             title={title}
             columnProperty={columnProperty}
             {...columnProperty}
-            {...this.props}/>);
+            {...this.props}/>)
       }
 
-      return component;
-    });
+      return component
+    })
 
     return this.props.columns.length > 0 ? (
       <thead style={style} className={className}>
@@ -69,8 +68,6 @@ import { arraysEqual } from './utils/arrayHelper';;
           {headings}
         </tr>
       </thead>
-    ) : null;
+    ) : null
   }
 }
-
-  export default TableHeading;
