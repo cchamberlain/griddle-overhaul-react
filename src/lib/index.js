@@ -1,5 +1,5 @@
-import Griddle from './Griddle'
+import GriddleView from './GriddleView'
 import * as DefaultModules from './DefaultModules'
 import * as StyleHelpers from './utils/StyleHelper'
 
-export { Griddle, DefaultModules, StyleHelpers }
+export { GriddleView, DefaultModules, StyleHelpers }

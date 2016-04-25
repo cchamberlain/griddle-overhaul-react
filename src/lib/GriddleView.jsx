@@ -4,7 +4,7 @@ import { getAssignedStyles } from './defaultStyles'
 import * as defaultSettings from './defaultSettings'
 import { arraysEqual } from './utils/arrayHelper'
 
-export default class Griddle extends Component {
+export default class GriddleView extends Component {
   static propTypes =  { events: PropTypes.object
                       , data: PropTypes.array
                       , components: PropTypes.object
